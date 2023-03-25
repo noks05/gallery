@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="./img/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+  <link href="./img/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+  <link href="./img/safari-pinned-tab.svg" rel="mask-icon" color="#5bbad5">
+  <link href="./css/choices.min.css" rel="stylesheet">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#fff">
+  <title>Blanchard - художественная галерея</title>
+  <link href="./css/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./css/normalize.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/media.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+
+      <div class="swiper header__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide header__swiper-slide header__swiper-slide_img1">
+          </div>
+          <div class="swiper-slide header__swiper-slide header__swiper-slide_img2">
+          </div>
+          <div class="swiper-slide header__swiper-slide header__swiper-slide_img3">
+          </div>
+        </div>
+      </div>
+
+      <div class="head-mini flex">
+        <div class="container head-mini__container flex">
+          <button class="head-mini__btn-burger-menu btn-reset"></button>
+          <a class="logo head-mini__logo">
+            <img src="./img/logo.svg" alt="Blanchard - логотип компании">
+          </a>
+          <button class="head-mini__btn-search btn-search-hover btn-reset" id="btn-search" type="button"></button>
+
+          <form class="search-box">
+            <button class="search-box__btn-search head-mini__btn-search btn-search-hover  btn-reset" aria-label="Найти"
+              type="submit"></button>
+            <div class="search-box__contr-input">
+              <input class="search-box__input" aria-label="Поле поиска по сайту" type="search">
+            </div>
+            <button class="search-box__close btn-reset focus" aria-label="Закрыть поле поиска" type="button"></button>
+          </form>
+
+
+          <nav class="head-mini__burger-menu burger-menu flex">
+            <div class="burger-menu__contr">
+              <button class="head-mini__close btn-reset" type="button"></button>
+              <ul class="burger-menu__list flex">
+                <li class="burger-menu__item">
+                  <a class="burger-menu__link nav-link nav-link-hover js-scroll-link" href="#aboute-us">
+                    О&nbsp;нас
+                  </a>
+                </li>
+                <li class="burger-menu__item">
+                  <a class="burger-menu__link nav-link nav-link-hover js-scroll-link" href="#gallery">
+                    Галерея
+                  </a>
+                </li>
+                <li class="burger-menu__item">
+                  <a class="burger-menu__link nav-link nav-link-hover js-scroll-link" href="#catalog">
+                    Каталог
+                  </a>
+                </li>
+                <li class="burger-menu__item">
+                  <a class="burger-menu__link nav-link nav-link-hover js-scroll-link" href="#events">
+                    События
+                  </a>
+                </li>
+                <li class="burger-menu__item">
+                  <a class="burger-menu__link nav-link nav-link-hover js-scroll-link" href="#projects">
+                    Проекты
+                  </a>
+                </li>
+                <li class="burger-menu__item">
+                  <a class="burger-menu__link nav-link nav-link-hover js-scroll-link" href="#contacts">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button class="sign-in head-mini__sign-in btn-reset" type="button">
+              <span class="sign-in__img head-mini__img">
+              </span>
+              <span class="sign-in__text head-mini__text">
+                Войти
+              </span>
+            </button>
+
+          </nav>
+        </div>
+      </div>
+
+      <div class="head">
+        <div class="container head__container flex">
+          <a class="logo head__logo">
+            <img src="./img/logo.svg" alt="Blanchard - логотип компании">
+          </a>
+
+          <nav class="main-nav head__main-nav">
+            <ul class="main-nav__list flex">
+              <li class="main-nav__item">
+                <a class="main-nav__link nav-link-hover js-scroll-link" href="#aboute-us">
+                  О&nbsp;нас
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link nav-link-hover js-scroll-link" href="#gallery">
+                  Галерея
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link nav-link-hover js-scroll-link" href="#catalog">
+                  Каталог
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link nav-link-hover js-scroll-link" href="#events">
+                  События
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link nav-link-hover js-scroll-link" href="#projects">
+                  Проекты
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link nav-link-hover js-scroll-link" href="#contacts">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="sign-in btn-reset" type="button">
+            <span class="sign-in__img">
+            </span>
+            <span class="sign-in__text">
+              Войти
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="side-nav">
+        <div class="container side-nav__container flex">
+          <ul class="style-nav flex">
+            <li class="style-nav__item">
+              <button class="style-nav__btn nav-link-hover btn-reset" type="button">
+                Реализм
+              </button>
+
+              <div class="style-nav__box-styles box-styles">
+
+                <div class="box-styles__wrap">
+
+                  <ul class="box-styles__autors">
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__realism1" href="#catalog">
+                        <span class="box-styles__text">
+                          Тинторето
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__realism2" href="#catalog">
+                        <span class="box-styles__text">
+                          Фридрих
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__realism3" href="#catalog">
+                        <span class="box-styles__text">
+                          Леонардо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__realism4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__realism4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__realism4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__realism4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__realism4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="style-nav__item">
+              <button class="style-nav__btn nav-link-hover btn-reset" type="button">
+                Импрессионизм
+              </button>
+
+              <div class="style-nav__box-styles box-styles">
+
+                <div class="box-styles__wrap">
+
+                  <ul class="box-styles__autors">
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__impression1" href="#catalog">
+                        <span class="box-styles__text">
+                          Моне
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__impression2" href="#catalog">
+                        <span class="box-styles__text">
+                          Сислей
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__impression3" href="#catalog">
+                        <span class="box-styles__text">
+                          Мане
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__impression4" href="#catalog">
+                        <span class="box-styles__text">
+                          Ренуар
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__impression4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__impression4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__impression4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__impression4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="style-nav__item">
+              <button class="style-nav__btn nav-link-hover btn-reset" type="button">
+                Постимпрессионизм
+              </button>
+
+              <div class="style-nav__box-styles box-styles">
+
+                <div class="box-styles__wrap">
+
+                  <ul class="box-styles__autors">
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__postimpression1" href="#catalog">
+                        <span class="box-styles__text">
+                          Ван Гог
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__postimpression2" href="#catalog">
+                        <span class="box-styles__text">
+                          Сезанн
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__postimpression3" href="#catalog">
+                        <span class="box-styles__text">
+                          Гоген
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__postimpression4" href="#catalog">
+                        <span class="box-styles__text">
+                          Сёра
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__postimpression4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__postimpression4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__postimpression4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__postimpression4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="style-nav__item">
+              <button class="style-nav__btn nav-link-hover btn-reset" type="button">
+                Авангард
+              </button>
+
+              <div class="style-nav__box-styles box-styles">
+
+                <div class="box-styles__wrap">
+
+                  <ul class="box-styles__autors">
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__avangard1" href="#catalog">
+                        <span class="box-styles__text">
+                          Кандинский
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__avangard2" href="#catalog">
+                        <span class="box-styles__text">
+                          Маринетти
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__avangard3" href="#catalog">
+                        <span class="box-styles__text">
+                          Малевич
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__avangard4" href="#catalog">
+                        <span class="box-styles__text">
+                          Пикассо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__avangard4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__avangard4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__avangard4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__avangard4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="style-nav__item">
+              <button class="style-nav__btn nav-link-hover btn-reset" type="button">
+                Футуризм
+              </button>
+
+              <div class="style-nav__box-styles box-styles">
+
+                <div class="box-styles__wrap">
+
+                  <ul class="box-styles__autors">
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__futurism1" href="#catalog">
+                        <span class="box-styles__text">
+                          Карра
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__futurism2" href="#catalog">
+                        <span class="box-styles__text">
+                          Прателла
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__futurism3" href="#catalog">
+                        <span class="box-styles__text">
+                          Северини
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__futurism4" href="#catalog">
+                        <span class="box-styles__text">
+                          Балла
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__futurism4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__futurism4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__futurism4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                    <li class="box-styles__autor">
+                      <a class="box-styles__link flex js-scroll-link box-styles__futurism4" href="#catalog">
+                        <span class="box-styles__text">
+                          Верроккьо
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <form class="search flex" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <button class="search__btn btn-search-hover btn-reset" type="submit"></button>
+            <div class="search__contr-input">
+              <input class="search__input" type="search" placeholder="Поиск по&nbsp;сайту" name="Search">
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero">
+          <h1 class="hero__title">
+            Прикоснитесь к&nbsp;прекрасному
+          </h1>
+          <p class="hero__descr">
+            Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки
+            для новых предложений
+          </p>
+          <a class="hero__btn js-scroll-link" href="#contacts">
+            Подписаться на&nbsp;рассылку
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section aboute-us" id="aboute-us">
+        <div class="container">
+          <h2 class="section-title aboute-us__title">
+            О&nbsp;нас
+          </h2>
+          <p class="aboute-us__descr normal-text">
+            Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
+            участника как способного принимать собственные решения касаемо распределения внутренних резервов
+            и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт
+            за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что
+            высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план
+            целого
+            ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов.
+            В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность
+            среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.
+          </p>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="container gallery__container flex">
+          <div class="gallery__left">
+            <h2 class="section-title gallery__title">
+              Галерея
+            </h2>
+            <div class="filter">
+              <h3 class="filter__title"
+                title="Выбрать из списка одно из направлений в исскустве и желаемый исторический промежуток">
+                Фильтр:
+              </h3>
+
+              <select class="js-choice" name="direction-in-art">
+                <option value="Живопись">
+                  Живопись
+                </option>
+                <option value="Рисунок">
+                  Рисунок
+                </option>
+                <option value="Скульптура">
+                  Скульптура
+                </option>
+              </select>
+
+
+              <div class="century filter__century">
+                <ul class="century__list">
+                  <li class="century__item">
+                    <label class="century__label">
+                      <input class="century__checkbox visually-hidden" type="checkbox">
+                      <span class="century__radio"></span>
+                      <span class="century__text normal-text">
+                        XIX век
+                      </span>
+                    </label>
+                  </li>
+                  <li class="century__item">
+                    <label class="century__label">
+                      <input class="century__checkbox visually-hidden" type="checkbox">
+                      <span class="century__radio"></span>
+                      <span class="century__text normal-text">
+                        XX&nbsp;век
+                      </span>
+                    </label>
+                  </li>
+                  <li class="century__item">
+                    <label class="century__label">
+                      <input class="century__checkbox visually-hidden" type="checkbox">
+                      <span class="century__radio"></span>
+                      <span class="century__text normal-text">
+                        Современность
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__right">
+
+            <div class="swiper gallery__swiper">
+              <div class="gallery__nav">
+                <button
+                  class="gallery__prev js-gallery-prev gallery__btn-nav swiper-button-prev swiper-btn-global btn-reset"
+                  type="button">
+                </button>
+                <div class="gallery__pagination js-gallery-pagination swiper-pagination">
+                </div>
+                <button
+                  class="gallery__next js-gallery-next gallery__btn-nav swiper-button-next swiper-btn-global btn-reset"
+                  type="button">
+                </button>
+              </div>
+
+              <div class="swiper-wrapper gallery__swiper-wrapper">
+                <button class="gallery__slide swiper-slide btn-reset" id="gallery-img1" type="button">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./img/gallery1-320.jpg">
+                    <source media="(max-width: 1023px)" srcset="./img/gallery1-768.jpg">
+                    <source media="(max-width: 1650px)" srcset="./img/gallery1-1024.jpg">
+                    <img class="gallery__img" src="./img/gallery1.jpg" aria-label="Открыть описание о картине"
+                      alt="Картина" loading="lazy">
+                  </picture>
+                </button>
+
+                <button class="gallery__slide swiper-slide btn-reset" id="gallery-img2" type="button">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./img/gallery2-320.jpg">
+                    <source media="(max-width: 1023px)" srcset="./img/gallery2-768.jpg">
+                    <source media="(max-width: 1650px)" srcset="./img/gallery2-1024.jpg">
+                    <img class="gallery__img" src="./img/gallery2.jpg" aria-label="Открыть описание о картине"
+                      alt="Картина" loading="lazy">
+                  </picture>
+                </button>
+
+                <button class="gallery__slide swiper-slide btn-reset" id="gallery-img3" type="button">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./img/gallery3-320.jpg">
+                    <source media="(max-width: 1023px)" srcset="./img/gallery3-768.jpg">
+                    <source media="(max-width: 1650px)" srcset="./img/gallery3-1024.jpg">
+                    <img class="gallery__img" src="./img/gallery3.jpg" aria-label="Открыть описание о картине"
+                      alt="Картина" loading="lazy">
+                  </picture>
+                </button>
+
+                <button class="gallery__slide swiper-slide btn-reset" id="gallery-img4" type="button">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./img/gallery4-320.jpg">
+                    <source media="(max-width: 1023px)" srcset="./img/gallery4-768.jpg">
+                    <source media="(max-width: 1650px)" srcset="./img/gallery4-1024.jpg">
+                    <img class="gallery__img" src="./img/gallery4.jpg" aria-label="Открыть описание о картине"
+                      alt="Картина" loading="lazy">
+                  </picture>
+                </button>
+
+                <button class="gallery__slide swiper-slide btn-reset" id="gallery-img5" type="button">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./img/gallery5-320.jpg">
+                    <source media="(max-width: 1023px)" srcset="./img/gallery5-768.jpg">
+                    <source media="(max-width: 1650px)" srcset="./img/gallery5-1024.jpg">
+                    <img class="gallery__img" src="./img/gallery5.jpg" aria-label="Открыть описание о картине"
+                      alt="Картина" loading="lazy">
+                  </picture>
+                </button>
+
+                <button class="gallery__slide swiper-slide btn-reset" id="gallery-img6" type="button">
+                  <picture>
+                    <source media="(max-width: 1023px)" srcset="./img/gallery6-768.jpg">
+                    <source media="(max-width: 1650px)" srcset="./img/gallery6-1024.jpg">
+                    <img class="gallery__img" src="./img/gallery6.jpg" aria-label="Открыть описание о картине"
+                      alt="Картина" loading="lazy">
+                  </picture>
+                </button>
+              </div>
+
+              <div class="gallery__nav gallery-nav-320">
+                <button
+                  class="gallery__prev js-gallery-prev gallery__btn-nav swiper-button-prev swiper-btn-global btn-reset"
+                  type="button">
+                </button>
+                <div class="gallery__pagination js-gallery-pagination swiper-pagination">
+                </div>
+                <button
+                  class="gallery__next js-gallery-next gallery__btn-nav swiper-button-next swiper-btn-global btn-reset"
+                  type="button">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section catalog" id="catalog">
+        <div class="container">
+          <h2 class="section-title catalog__title">
+            Каталог
+          </h2>
+          <p class="catalog__descr normal-text">
+            Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+            политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего
+            лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии
+            и&nbsp;по&nbsp;сей
+            день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
+          </p>
+          <div class="catalog__review flex">
+            <div class="catalog__left artist">
+              <div class="artist__contr artist__contr-active" id="artist12">
+                <div class="artist__contr-img">
+                  <div class="artist__img">
+                  </div>
+                </div>
+                <h3 class="artist__name subtitle">
+                  Доменико Гирландайо
+                </h3>
+                <span class="artist__birthday date">
+                  <time datetime="1448-06-02">
+                    2&nbsp;июня 1448
+                  </time>&ndash;
+                  <time datetime="1494-01-11">
+                    11 января 1494
+                  </time>
+                </span>
+                <p class="artist__descr normal-text">
+                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
+                  в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых
+                  выпукло,
+                  со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли
+                  выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
+                </p>
+              </div>
+
+              <div class="none-artist" id="none-artist">
+                <div class="none-artist__contr-img">
+                  <div class="none-artist__img">
+                  </div>
+                </div>
+                <div class="none-artist__text flex column-start">
+                  <h4 class="none-artist__title subtitle">
+                    Что мы&nbsp;о&nbsp;нём знаем?
+                  </h4>
+                  <div class="none-artist__descr">
+                    Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
+                  </div>
+                  <a class="link-to-gallery js-scroll-link" href="#gallery">
+                    В&nbsp;галерею
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog__right years">
+              <ul class="years__list" id="accordion">
+
+                <li class="years__item">
+                  <h3 class="years__title subtitle">
+                    <span class="years__title-text">
+                      C&nbsp;1400 по&nbsp;1499&nbsp;гг
+                    </span>
+                    <span class="years__arrow"></span>
+                  </h3>
+
+                  <div class="years__text">
+                    <ul class="years__names flex">
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist1" type="button">
+                          Бенедетто ди&nbsp;Биндо
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist2" type="button">
+                          Бергоньоне, Амброджо
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist3" type="button">
+                          Биссоло, Франческо
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist4" type="button">
+                          Больтраффио, Джованни
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist5" type="button">
+                          Бонсиньори, Франческо
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist6" type="button">
+                          Боттичини, Рафаэлло
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist7" type="button">
+                          Брамантино
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist8" type="button">
+                          Бреа, Людовико
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist9" type="button">
+                          Бьяджо д’Антонио Туччи
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist10" type="button">
+                          Веккьетта
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist11" type="button">
+                          Андреа Верроккьо
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist11" type="button">
+                          Андреа Верроккьо
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist12" type="button">
+                          Доменико Гирландайо
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist13" type="button">
+                          Беноццо Гоццоли
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist14" type="button">
+                          Бонсиньори, Франческо
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist15" type="button">
+                          Граначчи, Франческо
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist15" type="button">
+                          Граначчи, Франческо
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist16" type="button">
+                          Грегорио ди Чекко
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist16" type="button">
+                          Грегорио ди Чекко
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist17" type="button">
+                          Джованни да Удине
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist18" type="button">
+                          Джованни ди Паоло
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist19" type="button">
+                          Парентино, Бернардо
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist20" type="button">
+                          Пезеллино
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist21" type="button">
+                          Пьетро Перуджино
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist22" type="button">
+                          Беноццо Гоццоли
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist23" type="button">
+                          Пизанелло
+                        </button>
+                      </li>
+                      <li class="years__name normal-text">
+                        <button class="years__btn btn-reset" data-id-artist="artist24" type="button">
+                          Пинтуриккьо
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="years__item">
+
+                  <h3 class="years__title subtitle">
+                    <span class="years__title-text">
+                      C&nbsp;1500 по&nbsp;1599&nbsp;гг
+                    </span>
+                    <span class="years__arrow"></span>
+                  </h3>
+
+                  <div class="years__text">
+
+                    <div class="none-names flex">
+                      <div class="none-names__img">
+                        <span class="none-names__img-bg"></span>
+                      </div>
+
+                      <div class="none-names__text flex column-start">
+                        <h3 class="none-names__title subtitle">
+                          Здесь пока пусто
+                        </h3>
+
+                        <div class="none-names__descr">
+                          А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                        </div>
+
+                        <a class="link-to-gallery js-scroll-link" href="#gallery">
+                          В&nbsp;галерею
+                        </a>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </li>
+
+                <li class="years__item">
+                  <h3 class="years__title subtitle">
+                    <span class="years__title-text">
+                      C&nbsp;1600 по&nbsp;1699&nbsp;гг
+                    </span>
+                    <span class="years__arrow"></span>
+                  </h3>
+
+                  <div class="years__text">
+                    <div class="none-names flex">
+                      <div class="none-names__img">
+                        <span class="none-names__img-bg"></span>
+                      </div>
+
+                      <div class="none-names__text flex column-start">
+                        <h3 class="none-names__title subtitle">
+                          Здесь пока пусто
+                        </h3>
+
+                        <div class="none-names__descr">
+                          А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                        </div>
+
+                        <a class="link-to-gallery js-scroll-link" href="#gallery">
+                          В&nbsp;галерею
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </li>
+
+                <li class="years__item">
+                  <h3 class="years__title subtitle">
+                    <span class="years__title-text">
+                      C&nbsp;1700 по&nbsp;1799&nbsp;гг
+                    </span>
+                    <span class="years__arrow"></span>
+                  </h3>
+
+                  <div class="years__text">
+                    <div class="none-names flex">
+                      <div class="none-names__img">
+                        <span class="none-names__img-bg"></span>
+                      </div>
+
+                      <div class="none-names__text flex column-start">
+                        <h3 class="none-names__title subtitle">
+                          Здесь пока пусто
+                        </h3>
+
+                        <div class="none-names__descr">
+                          А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                        </div>
+
+                        <a class="link-to-gallery js-scroll-link" href="#gallery">
+                          В&nbsp;галерею
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </li>
+
+                <li class="years__item">
+                  <h3 class="years__title subtitle">
+                    <span class="years__title-text">
+                      C&nbsp;1800 по&nbsp;1899&nbsp;гг
+                    </span>
+                    <span class="years__arrow"></span>
+                  </h3>
+
+                  <div class="years__text">
+                    <div class="none-names flex">
+                      <div class="none-names__img">
+                        <span class="none-names__img-bg"></span>
+                      </div>
+
+                      <div class="none-names__text flex column-start">
+                        <h3 class="none-names__title subtitle">
+                          Здесь пока пусто
+                        </h3>
+
+                        <div class="none-names__descr">
+                          А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                        </div>
+
+                        <a class="link-to-gallery js-scroll-link" href="#gallery">
+                          В&nbsp;галерею
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </li>
+
+                <li class="years__item">
+                  <h3 class="years__title subtitle">
+                    <span class="years__title-text">
+                      C&nbsp;1900 по&nbsp;1999&nbsp;гг
+                    </span>
+                    <span class="years__arrow"></span>
+                  </h3>
+
+                  <div class="years__text">
+                    <div class="none-names flex">
+                      <div class="none-names__img">
+                        <span class="none-names__img-bg"></span>
+                      </div>
+
+                      <div class="none-names__text flex column-start">
+                        <h3 class="none-names__title subtitle">
+                          Здесь пока пусто
+                        </h3>
+
+                        <div class="none-names__descr">
+                          А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                        </div>
+
+                        <a class="link-to-gallery js-scroll-link" href="#gallery">
+                          В&nbsp;галерею
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </li>
+
+                <li class="years__item">
+                  <h3 class="years__title subtitle">
+                    <span class="years__title-text">
+                      C&nbsp;2000&nbsp;г
+                    </span>
+                    <span class="years__arrow"></span>
+                  </h3>
+
+                  <div class="years__text">
+                    <div class="none-names flex">
+                      <div class="none-names__img">
+                        <span class="none-names__img-bg"></span>
+                      </div>
+
+                      <div class="none-names__text flex column-start">
+                        <h3 class="none-names__title subtitle">
+                          Здесь пока пусто
+                        </h3>
+
+                        <div class="none-names__descr">
+                          А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                        </div>
+
+                        <a class="link-to-gallery js-scroll-link" href="#gallery">
+                          В&nbsp;галерею
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section events" id="events">
+        <div class="container events__container">
+
+          <h2 class="section-title events__title">
+            События
+          </h2>
+          <div class="swiper events__swiper">
+
+            <ul class="swiper-wrapper events__swiper-wrapper flex">
+              <li class="swiper-slide events__swiper-slide">
+                <article class="event flex">
+                  <div class="event__img event__img1"></div>
+
+                  <div class="event__content flex column-start">
+                    <div class="event__text-contr">
+                      <div class="event__spot date">
+                        <div>
+                          Музей им. Щусева
+                        </div>
+                        <p>
+                          с&nbsp;
+                          <time datetime="2022-03-20">20&nbsp;марта</time>
+                          по&nbsp;
+                          <time datetime="2022-04-30">30&nbsp;апреля</time>
+                        </p>
+                      </div>
+                      <h3 class="event__title event__title subtitle">
+                        Книжная гравюра в&nbsp;<span class="event__none-text1">живом </span>восприятии
+                      </h3>
+                      <p class="event__descr normal-text">
+                        Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
+                        которую
+                        продолжили родолжили брат его брат Давид и&nbsp;сын Ридольфо
+                      </p>
+                    </div>
+                    <a class="event__more normal-text" href="#">
+                      Подробнее
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide events__swiper-slide">
+                <article class="event flex">
+                  <div class="event__img event__img2"></div>
+
+                  <div class="event__content flex column-start">
+                    <div class="event__text-contr">
+                      <div class="event__spot date">
+                        <div>
+                          ММОМА
+                        </div>
+                        <p>
+                          с&nbsp;
+                          <time datetime="2022-03-24 19:00">
+                            24&nbsp;марта19:00
+                          </time>
+                        </p>
+                      </div>
+                      <h3 class="event__title subtitle">
+                        &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.
+                      </h3>
+                      <p class="event__descr normal-text">
+                        Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством
+                        простого факта
+                      </p>
+                    </div>
+                    <a class="event__more normal-text" href="#">
+                      Подробнее
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide events__swiper-slide">
+                <article class="event flex">
+                  <div class="event__img event__img3"></div>
+
+                  <div class="event__content flex column-start">
+                    <div class="event__text-contr">
+                      <div class="event__spot date">
+                        <div>
+                          Еврейский музей
+                        </div>
+                        <p>
+                          с&nbsp;
+                          <time datetime="2022-03-31">31&nbsp;марта</time>
+                          по&nbsp;
+                          <time datetime="2022-04-21">21&nbsp;апреля</time>
+                        </p>
+                      </div>
+                      <h3 class="event__title subtitle">
+                        Выставка &laquo;Формация 2020&raquo;
+                      </h3>
+                      <p class="event__descr normal-text">
+                        Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет
+                        важную
+                        роль в&nbsp;формировании глубокомысленных рассуждений
+                      </p>
+                    </div>
+                    <a class="event__more normal-text" href="#">
+                      Подробнее
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide events__swiper-slide">
+                <article class="event flex">
+                  <div class="event__img event__img4"></div>
+
+                  <div class="event__content flex column-start">
+                    <div class="event__text-contr">
+                      <div class="event__spot date">
+                        <div>
+                          ММАМ
+                        </div>
+                        <p>
+                          с&nbsp;
+                          <time datetime="2022-04-08">8&nbsp;апреля</time>
+                          по&nbsp;
+                          <time datetime="2022-05-20">20&nbsp;мая</time>
+                        </p>
+                      </div>
+                      <h3 class="event__title subtitle">
+                        Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;
+                      </h3>
+                      <p class="event__descr normal-text">
+                        Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
+                        которую продолжили его брат Давид и&nbsp;сын Ридольфо
+                      </p>
+                    </div>
+                    <a class="event__more normal-text" href="#">
+                      Подробнее
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide events__swiper-slide">
+                <article class="event flex">
+                  <div class="event__img event__img5"></div>
+
+                  <div class="event__content flex column-start">
+                    <div class="event__text-contr">
+                      <div class="event__spot date">
+                        <div>
+                          Третьяковка на&nbsp;Крымском валу
+                        </div>
+                        <p>
+                          с&nbsp;
+                          <time datetime="2022-03-30">30&nbsp;марта</time>
+                          по&nbsp;
+                          <time datetime="2022-04-30">30&nbsp;апреля</time>
+                        </p>
+                      </div>
+                      <h3 class="event__title subtitle">
+                        XXIV Международная биеннале молодого искусства
+                      </h3>
+                      <p class="event__descr normal-text">
+                        Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования
+                      </p>
+                    </div>
+                    <a class="event__more normal-text" href="#">
+                      Подробнее
+                    </a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+
+            <div class="events__pagination js-events-pagination swiper-pagination"></div>
+          </div>
+
+          <button class="events__swiper-btn js-events-prev swiper-button-prev swiper-btn-global btn-reset"
+            type="button"></button>
+          <button class="events__swiper-btn js-events-next swiper-button-next swiper-btn-global btn-reset"
+            type="button"></button>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="container">
+          <h2 class="section-title projects__title">
+            Проекты
+          </h2>
+          <div class="projects__descr normal-text">
+            Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
+            <button class="tooltip-btn js-tooltip-btn btn-reset" data-tippy-content="Текст1" aria-label="подсказка"
+              type="button">
+            </button>
+            фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны
+            с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
+            их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское обеспечение нашей
+            деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений.
+            И&nbsp;нет
+            <button class="tooltip-btn js-tooltip-btn btn-reset" data-tippy-content="Текст2" aria-label="подсказка"
+              type="button">
+            </button>
+            сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в&nbsp;разрезе
+            маркетинговых и&nbsp;финансовых предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также
+            представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою
+            очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости.
+            <button class="tooltip-btn js-tooltip-btn btn-reset" data-tippy-content="Текст подсказки: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat magni in iure, autem,
+              eos adipisci dolor voluptatem mollitia aspernatur praesentium fugit veniam harum sunt eveniet dolorem
+              doloremque cumque quibusdam. Delectus!" aria-label="подсказка" type="button">
+            </button>
+            <span class="projects__contr">
+              Подробнее:
+              <a class="projects__link" href="#">
+                blanchard-art.ru/projects
+              </a>
+            </span>
+          </div>
+          <h3 class="projects__partners subtitle">
+            Партнёры проектов:
+          </h3>
+
+          <div class="projects__contr-swiper">
+            <div class="swiper projects__swiper">
+
+              <div class="swiper-wrapper projects__swiper-wrapper">
+                <a class="swiper-slide projects__swiper-slide flex" href="#" tabindex="0">
+                  <img class="projects__partner" src="./img/partners1.svg" alt="Логотип компании-партнёра">
+                </a>
+                <a class="swiper-slide projects__swiper-slide flex" href="#" tabindex="0">
+                  <img class="projects__partner" src="./img/partners2.svg" alt="Логотип компании-партнёра">
+                </a>
+                <a class="swiper-slide projects__swiper-slide flex" href="#" tabindex="0">
+                  <img class="projects__partner" src="./img/partners3.svg" alt="Логотип компании-партнёра">
+                </a>
+                <a class="swiper-slide projects__swiper-slide flex" href="#" tabindex="0">
+                  <img class="projects__partner" src="./img/partners4.svg" alt="Логотип компании-партнёра">
+                </a>
+                <a class="swiper-slide projects__swiper-slide flex" href="#" tabindex="0">
+                  <img class="projects__partner" src="./img/partners5.svg" alt="Логотип компании-партнёра">
+                </a>
+                <a class="swiper-slide projects__swiper-slide flex" href="#" tabindex="0">
+                  <img class="projects__partner" src="./img/partners6.svg" alt="Логотип компании-партнёра">
+                </a>
+                <a class="swiper-slide projects__swiper-slide flex" href="#" tabindex="0">
+                  <img class="projects__partner" src="./img/partners7.svg" alt="Логотип компании-партнёра">
+                </a>
+                <a class="swiper-slide projects__swiper-slide flex" href="#" tabindex="0">
+                  <img class="projects__partner" src="./img/partners8.svg" alt="Логотип компании-партнёра">
+                </a>
+                <a class="swiper-slide projects__swiper-slide flex" href="#" tabindex="0">
+                  <img class="projects__partner" src="./img/partners9.svg" alt="Логотип компании-партнёра">
+                </a>
+              </div>
+
+            </div>
+
+            <button class="projects__swiper-btn js-projects-prev swiper-button-prev swiper-btn-global btn-reset"
+              type="button"></button>
+            <button class="projects__swiper-btn js-projects-next swiper-button-next swiper-btn-global btn-reset"
+              type="button"></button>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section contacts" id="contacts">
+        <h2 class="contacts__title visually-hidden">
+          Контакты и адресс.
+        </h2>
+
+        <div class="container contacts__container flex">
+          <div class="address contacts__address">
+            <div class="address__title subtitle">
+              Шоурум &#8470;&nbsp;4
+            </div>
+            <p class="address__text normal-text">
+              Леонтьевский переулок, дом 5/1
+            </p>
+          </div>
+
+          <form class="contacts__form flex" id="js-contacts-form" action="#" method="POST">
+            <ul class="contacts__inputs flex">
+              <li class="contacts__item flex">
+                <input class="contacts__input contacts__input-name" type="text" name="Имя" placeholder="Имя*">
+                <span class="contacts__invalid-text">
+                </span>
+              </li>
+              <li class="contacts__item flex">
+                <input class="contacts__input contacts__input-tel" type="tel" name="Телефон" placeholder="Телефон*">
+                <span class="contacts__invalid-text">
+                </span>
+              </li>
+            </ul>
+            <button class="contacts__btn btn-reset" id="contacts-btn" type="submit">
+              <span class="contacts__btn-text flex">
+                Заказать обратный звонок
+              </span>
+            </button>
+            <button class="contacts__btn btn-reset contacts__btn_320" type="submit">
+              <span class="contacts__btn-text flex">
+                Заказать
+              </span>
+            </button>
+          </form>
+
+          <div class="contacts__socials">
+            <div class="contacts__text subtitle">
+              Связаться в&nbsp;один клик
+            </div>
+            <ul class="contacts__list-social flex">
+              <li class="contacts__social">
+                <a class="contacts__link contacts__link_whatsapp" href="#">Вотсап</a>
+              </li>
+              <li class="contacts__social">
+                <a class="contacts__link contacts__link_telegram" href="#">Телеграм</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="map contacts__map" id="map">
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer flex">
+      <div class="container footer__container flex">
+        <a class="logo">
+          <img src="./img/logo.svg" alt="Blanchard - логотип компании">
+        </a>
+        <ul class="footer__socials flex">
+          <li class="footer__item">
+            <a class="footer__link  footer__link_vk" href="#">Вконтакте</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link_ok" href="#">Одноклассники</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-wrapper flex" data-focus>
+
+    <div class="modal-gallery" aria-describedby="modal-gallery-descr" aria-labelledby="modal-gallery-title"
+      aria-modal="true" role="dialog">
+      <button class="modal-close modal-gallery__close btn-reset" aria-label="Закрыть модальное окно" type="button">
+      </button>
+
+      <img class="modal-gallery__painting" src="./img/painting-modal.jpg" alt="Избражение Картины" loading="lazy">
+
+      <div class="modal-gallery__right flex column-start">
+        <h2 class="modal-gallery__artist subtitle" id="modal-gallery-title">
+          Казимир Малевич
+        </h2>
+
+        <div class="modal-gallery__descr" id="modal-gallery-descr">
+          <div class="modal-gallery__paint-name">
+            &laquo;Женщина с&nbsp;граблями&raquo;
+          </div>
+          <span class="modal-gallery__date date">
+            1931&ndash;1932
+          </span>
+          <p class="modal-gallery__text">
+            Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся
+            за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после того, как первый цикл был утерян после
+            Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="submit-message flex" aria-describedby="submit-message-descr" aria-labelledby="submit-message-title"
+      aria-modal="true" role="dialog">
+
+      <button class="modal-close submit-message__close btn-reset" aria-label="Закрыть модальное окно" type="button">
+      </button>
+
+      <h2 class="visually-hidden" id="submit-message-title">
+        Окно с информацией о статусе отправки формы
+      </h2>
+
+      <p class="submit-message__descr normal-text" id="submit-message-descr">
+        Данные формы успешно отправлены!
+      </p>
+
+      <button class="submit-message__ok btn-reset">
+        Понятно
+      </button>
+
+    </div>
+  </div>
+
+  <script src="./js/inputmask.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="./js/choices.min.js"></script>
+  <script src="./js/jquery-3.6.3.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="./js/inert.min.js" defer></script>
+  <script src="./js/plagins.js" defer></script>
+  <script src="./js/all-js.js" defer></script>
+
+</body>
+
+</html>
