@@ -28,22 +28,14 @@
 /* header */
 @media(max-width: 1650px) {
 
-  .head {
-    display: none;
-  }
-
   .head__logo {
     height: 44px;
     width: 189px;
-    margin-right: 0;
+    margin-right: 50px;
   }
 
   .side-nav {
     display: none;
-  }
-
-  .head-mini {
-    display: flex;
   }
 
   .hero {
@@ -63,6 +55,14 @@
 }
 
 @media(max-width: 1300px) {
+
+  .head {
+    display: none;
+  }
+
+  .head-mini {
+    display: flex;
+  }
 
   .head-mini__close,
   .head-mini__sign-in {
